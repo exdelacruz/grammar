@@ -54,7 +54,7 @@ if __name__ == "__main__":
     main()
 
 
-ef correct_grammar(input_string):
+def correct_grammar(input_string):
     # Add your grammar correction logic here
     # For demonstration purposes, let's just return the input_string as is.
     return input_string
