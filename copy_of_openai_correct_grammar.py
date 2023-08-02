@@ -53,6 +53,26 @@ print(f"Input: {input_string}\nOutput:\n{output}")
 if __name__ == "__main__":
     main()
 
-input_string = "She no went to the market"
-output = correct_grammar(input_string)
-print(f"Input: {input_string}\nOutput: {output}")
+
+ef correct_grammar(input_string):
+    # Add your grammar correction logic here
+    # For demonstration purposes, let's just return the input_string as is.
+    return input_string
+
+def main():
+    st.title("Grammar Correction App")
+
+    # Input
+    input_string = st.text_area("Enter the input string:")
+    
+    if st.button("Correct Grammar"):
+        # Call the correct_grammar function to get the output
+        output = correct_grammar(input_string)
+
+        # Display the results
+        st.text(f"Input: {input_string}")
+        st.text(f"Output: {output}")
+
+if __name__ == "__main__":
+    main()
+
