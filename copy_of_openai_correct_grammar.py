@@ -1,5 +1,3 @@
-!pip install openai
-
 # Commented out IPython magic to ensure Python compatibility.
 # %env OPENAI_API_KEY=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
 
