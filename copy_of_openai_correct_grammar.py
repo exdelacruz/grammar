@@ -25,6 +25,18 @@ def main():
     st.set_page_config(page_title="Grammar check!")
     st.title("Grammar check- Generate correct grammar")
     st.text("by: Exekiel Dela Cruz BSCS 3A")
+    instructions = ['1. Grammer correct']
+
+    str_inst = ''
+    count = 0
+    for i in instructions:
+        str_inst = str_inst + i
+        if count < len(instructions)-1:
+            str_inst = str_inst + ',\n'
+        count += 1
+
+
+
 def correct_grammar(input_string):
     # Add your grammar correction logic here
     # For example, you can use language processing libraries like NLTK or SpaCy
