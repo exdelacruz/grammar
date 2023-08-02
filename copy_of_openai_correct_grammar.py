@@ -34,7 +34,21 @@ def main():
         if count < len(instructions)-1:
             str_inst = str_inst + ',\n'
         count += 1
+def correct_grammar(input_string):
+    # Add your grammar correction logic here
+    # For example, you can use language processing libraries like NLTK or SpaCy
+    # to correct grammar errors in the input_string.
 
+    # For demonstration purposes, let's just return the input_string as is.
+    return input_string
+
+str_inst = "Some text to be included in the input_string."
+input_string = "Generate grammar for the following tasks:\n" + str_inst
+output = correct_grammar(input_string)
+print(f"Input: {input_string}\nOutput:\n{output}")
+
+if __name__ == "__main__":
+    main()
 
 
 def correct_grammar(input_string):
