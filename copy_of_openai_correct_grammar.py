@@ -27,7 +27,21 @@ def main():
     st.set_page_config(page_title="Grammar check!")
     st.title("Grammar check- Generate correct grammar")
     st.text("by: Exekiel Dela Cruz BSCS 3A")
+def correct_grammar(input_string):
+    # Add your grammar correction logic here
+    # For example, you can use language processing libraries like NLTK or SpaCy
+    # to correct grammar errors in the input_string.
 
+    # For demonstration purposes, let's just return the input_string as is.
+    return input_string
+
+str_inst = "Some text to be included in the input_string."
+input_string = "Generate grammar for the following tasks:\n" + str_inst
+output = correct_grammar(input_string)
+print(f"Input: {input_string}\nOutput:\n{output}")
+
+if __name__ == "__main__":
+    main()
 
 input_string = "She no went to the market"
 output = correct_grammar(input_string)
